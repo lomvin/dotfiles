@@ -62,6 +62,14 @@ This Ansible playbook only supports `Manjaro with i3` distribution. This is by d
 - Install OS
 
 
+### Refresh PGP Keys for Pacman
+
+```
+sudo pacman-key --init 
+sudo pacman-key --populate archlinux manjaro 
+sudo pacman-key --refresh-keys
+```
+
 ### System Upgrade
 
 Verify your `Manjaro with i3` installation has all latest packages installed before running the playbook.
