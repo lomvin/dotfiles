@@ -80,7 +80,13 @@ sudo pacman -Syu
 
 > NOTE: This will take some time.
 
-
+### Add Snap (missing from default instal Manjaro i3)
+```
+pamac install snapd libpamac-snap-plugin
+```
+```
+sudo systemctl enable --now snapd.socket
+```
 ## Setup
 
 ### values.yaml
